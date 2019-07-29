@@ -1,9 +1,112 @@
-#nav-vertical{
+/**
+ * HOJA DE ESTILOS DEL TEMA
+ * 1. Importaciones de estilos
+ * 2. Estilos generales
+ */
+
+ /*
+ * 1. Importaciones de estilos 
+ */
+@import 'marketing';/**Hoja de estilos de marketing.html */
+@import 'colors';/**Paleta de colores y fuentes del tema */
+
+/**
+ * Estilos generales
+ */
+
+*,*::after,*::before{
+  box-sizing: border-box;
+}
+html{
+  margin: 0;
+  padding: 0;
   height: 100vh;
-  width: 300px;
-  .brand-logo{
-    position: relative;
-    text-align: center;
-    width: 100%;
+}
+body{
+	background-image: url(../img/bgimage.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+  min-height: 100vh;
+  /*** GRID ***/
+  display: grid;
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+header{
+  grid-area: header;
+}
+main{
+  grid-area: main;
+  #portada{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height:100%;
+    margin: 0 10vw;
+    #logocorto{
+      display:none;
+    }
+    p span{
+      font-weight: bold;
+    }
+  }
+}
+footer{
+  grid-area: footer;
+  p{
+    color: $blanco;
+  }
+}
+@media (min-width: 992px){
+  #barraLateral{
+    left: 140px;
+    background-image: url(../img/barraLateralV.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    #iconosocial{
+      display: flex;
+      justify-content: space-around;
+      min-width: 15vh;
+      margin-bottom: 1em;
+      a img{
+        width: 30px;
+      }
+    }
+  }
+  nav{
+    background-color: transparent;
+    box-shadow: none;
+    ul li a{
+      font-family: $ff-menu;
+      font-size: 1.2vmax;
+      color: $naranja;
+    } 
+  }
+}
+@media (max-width: 992px){
+  #barraLateral{
+    display: none;
+  }
+  nav{
+    background-color: $naranja;
+  }
+}
+@media (max-width: 600px){
+  #portada{
+    #logolargo{
+      display: none;
+    }
+    #logocorto{
+      display: block;
+    }
   }
 }

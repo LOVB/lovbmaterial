@@ -1,0 +1,39 @@
+/**Importaciones de colores y fuentes */
+@import 'colors';
+
+/**Estilos generales de marketing */
+.marketing {
+  main{
+	  height: 100vh;
+  }
+  nav{
+	  background-color: $naranja;
+  }
+ .sidenav{
+  	background-color: $navy;
+	  li a{
+		  color: $blanco;	
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .marketing{
+    nav{
+      height: 100vh;
+      background-color: #002244;
+      a.brand-logo{
+        //font-size: 2vmax;
+        position: relative;
+        display: block;
+      }
+      #nav-mobile{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 10vh;
+      }
+    }
+  }
+}
