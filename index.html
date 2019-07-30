@@ -3,17 +3,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>LOVB_studio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+<<<<<<< HEAD
   <!-- Librería de iconos de materialize -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+=======
+>>>>>>> origin/lenovo
 
-  <link rel="stylesheet" href="css/normalize.css">
+  <!-- Librería de iconos de Materialize -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 
@@ -23,10 +27,65 @@
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+  <div id="barraLateral">
+    <div id="iconosocial">
+      <a href=""><img src="img/twitter.svg" alt="twitter"></a>
+      <a href=""><img src="img/instagram.svg" alt="instagram"></a> 
+      <a href=""><img src="img/linkedin.svg" alt="linkedin"></a>
+    </div>  
+  </div>
+<!-- 
+  >>>>>>>>>> HEADER <<<<<<<<<<
+-->
+  <header>
+    <nav id="nav-vertical" class="navbar-fixed">
+      <div class="nav-wrapper">
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down largo">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="marketing.html">Esto es Marketing</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+<!-- Menu para movil en sidebar oculto -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="marketing.html">Esto es Marketing</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </header>
+<!-- 
+ >>>>>>>>>>> MAIN <<<<<<<<<<<<<
+-->
+  <main class="container-fluid">
+    <div id="portada" class="row">
+      <div class="col l6 offset-l6 s12">
+        <div class="centrado">
+          <img id="logolargo" class="responsive-img" src="img/blancolargomark.svg" alt="LOVB_studio">
+          <img id="logocorto" class="responsive-img" src="img/cortoazulmm.svg" alt="LOVB_studio">
+        </div>
+        <div class="card-panel">
+          <p class="flow-text">"El <span>Marketing Manager</span>  es el responsable encargado de diseñar, organizar, desarrollar y gestionar la comunicación y el marketing de la empresa, permitiendo que esta logre alcanzar los objetivos organizacionales en determinado tiempo."</p>
+        </div>
+      </div>
+    </div>
+  </main>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<!-- 
+ >>>>>>>>>>>> FOOTER <<<<<<<<<<<
+-->
+  <footer class="container">
+    <div class="col s12">
+      <p class="center-align">LOVB_studio 2019 . info@lovbstudio.com . +34 603 631 149</p>
+    </div>
+  </footer>
+
+<!--
+  >>>>>>>>> SCRIPTS <<<<<<<<<<
+-->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/materialize.min.js"></script>
