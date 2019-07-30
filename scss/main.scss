@@ -38,6 +38,18 @@ body{
 }
 header{
   grid-area: header;
+  nav li{
+    padding-right: 5vw;
+  }
+  .brand-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+      width: 80%;
+    }
+  }
 }
 main{
   grid-area: main;
@@ -50,8 +62,13 @@ main{
     #logocorto{
       display:none;
     }
-    p span{
-      font-weight: bold;
+    .card-panel {
+      background-color: rgba($color: $blanco ,$alpha: 0);
+      margin-top: 5vh;
+      box-shadow: 0 0 0 #000;
+      .card-content p span{
+        font-weight: bold;
+      }
     }
   }
 }
@@ -60,6 +77,12 @@ footer{
   p{
     color: $blanco;
   }
+}
+.centrado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 @media (min-width: 992px){
   #barraLateral{
@@ -85,11 +108,14 @@ footer{
   nav{
     background-color: transparent;
     box-shadow: none;
-    ul li a{
+    ul li {
+     
+      a{
       font-family: $ff-menu;
       font-size: 1.2vmax;
       color: $naranja;
-    } 
+      } 
+    }
   }
 }
 @media (max-width: 992px){
@@ -97,16 +123,24 @@ footer{
     display: none;
   }
   nav{
-    background-color: $naranja;
+    background-color: rgba($color: $naranja, $alpha: 1);
   }
 }
 @media (max-width: 600px){
-  #portada{
+  main #portada{
+    .card-panel{
+      background-color: rgba($color: $blanco, $alpha: 0.5);
+      box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+      p{
+        text-align: center;
+      }
+    }
     #logolargo{
       display: none;
     }
     #logocorto{
       display: block;
+      width: 60%;
     }
   }
 }
