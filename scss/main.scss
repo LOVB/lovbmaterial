@@ -23,6 +23,7 @@ html{
   height: 100vh;
 }
 body{
+  background-color: $color-fondo;
 	background-image: url(../img/bgimage.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -66,8 +67,11 @@ main{
       background-color: rgba($color: $blanco ,$alpha: 0);
       margin-top: 5vh;
       box-shadow: 0 0 0 #000;
-      .card-content p span{
-        font-weight: bold;
+       p {
+        font-size: 1em;
+        span{
+          font-weight: bold;
+        }
       }
     }
   }
@@ -127,6 +131,9 @@ footer{
   }
 }
 @media (max-width: 600px){
+  body{
+    background-image: none;
+  }
   main #portada{
     .card-panel{
       background-color: rgba($color: $blanco, $alpha: 0.5);
