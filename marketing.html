@@ -18,25 +18,32 @@
 
 </head>
 
-<body class="marketing">
+<body id="marketing">
   <!--[if IE]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
   <div class="container-fluid">
 		<div class="row">
+      <!-- 
+        >>>>>>>>>>>>> HEADER <<<<<<<<<<
+       -->
 			<header>
-				<nav class="col s12 m12 l2">
-					<div class="nav-wrapper">
-						<a href="#" class="brand-logo center-align"><p class="flow-text">LOVB_studio</p></a>
-						<a href="#" data-target="mobile-demo" class="right sidenav-trigger left"><i class="material-icons">menu</i></a>
-						<ul id="nav-mobile" class="hide-on-med-and-down">
-							<li><a href="index.html">Inicio</a></li>
-							<li><a href="marketing.html">Esto es Marketing</a></li>
-              <li><a href="blog.html">Blog</a></li>
-							<li><a href="contacto.html">Contacto</a></li>
-						</ul>
-					</div>
-				</nav>
+        <!-- Menú vertical para la version large -->
+        <div class="navbar-fixed">
+          <nav class="col l3">
+            <div class="nav-wrapper">
+              <a href="#" data-target="mobile-demo" class="right sidenav-trigger left hide-on-large"><i class="material-icons">menu</i></a>
+              <a href="#" class="brand-logo"><img class="responsive-img" src="img/cortoblancowebfondo.svg" alt="LOVB_studio"></a>
+              <ul id="nav-mobile" class="hide-on-med-and-down">
+                <li><a class="flow-text" href="index.html">Inicio</a></li>
+                <li><a class="flow-text" href="marketing.html">Marketing</a></li>
+                <li><a class="flow-text" href="blog.html">Blog</a></li>
+                <li><a class="flow-text" href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- Menú desplegable en version med y min -->
 				<ul class="sidenav" id="mobile-demo">
           <li><a href="index.html">Inicio</a></li>
           <li><a href="marketing.html">Esto es Marketing</a></li>
@@ -44,21 +51,20 @@
           <li><a href="contacto.html">Contacto</a></li>
 				</ul>
 			</header>
-
-			<div class="row">
-				<main class="col s12 m12 l10">
-
-					<div> <!-- Note that "m4 l3" was added -->
-						<h2>Panel 1</h2>
-						 <i class="material-icons">add</i>
-					</div>
-
-				</main>
-				<footer class="col s12 m12 l10 red accent-2">
-					<p>Lorem, ipsum dolor.</p>
-				</footer>
-			</div>
-		</div>
+      <!-- 
+        >>>>>>>>>> MAIN <<<<<<<<<<
+       -->
+      <main class="container-fluid">
+        <div class="row">
+          <section class="box col s12 m12 l9 offset-l3">
+            <h2>Panel 1</h2>
+             <i class="material-icons">add</i>
+          </section>
+        </div>
+        <!-- 			<div class="row">
+        </div> -->
+      </main>
+    </div>
 	</div>
 
 <!--

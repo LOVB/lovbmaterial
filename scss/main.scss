@@ -1,5 +1,6 @@
 /**
  * HOJA DE ESTILOS DEL TEMA
+ * Generales para todas las páginas y expecífico solo para index
  * 1. Importaciones de estilos
  * 2. Estilos generales
  */
@@ -22,7 +23,7 @@ html{
   padding: 0;
   height: 100vh;
 }
-body{
+body#home{
   background-color: $color-fondo;
 	background-image: url(../img/bgimage.jpg);
 	background-size: cover;
@@ -37,7 +38,7 @@ body{
     "main"
     "footer";
 }
-header{
+#home header{
   grid-area: header;
   nav li{
     padding-right: 5vw;
@@ -52,7 +53,7 @@ header{
     }
   }
 }
-main{
+#home main{
   grid-area: main;
   #portada{
     align-items: center;
@@ -76,7 +77,8 @@ main{
     }
   }
 }
-footer{
+/*HOME FOOTER*/
+#home footer{
   grid-area: footer;
   p{
     color: $blanco;

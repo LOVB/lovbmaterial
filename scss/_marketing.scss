@@ -2,7 +2,7 @@
 @import 'colors';
 
 /**Estilos generales de marketing */
-.marketing {
+body#marketing {
   main{
 	  height: 100vh;
   }
@@ -10,7 +10,7 @@
 	  background-color: $naranja;
   }
  .sidenav{
-  	background-color: $navy;
+  	background-color: $naranja;
 	  li a{
 		  color: $blanco;	
     }
@@ -18,14 +18,18 @@
 }
 
 @media (min-width: 992px){
-  .marketing{
+  body#marketing{
     nav{
       height: 100vh;
-      background-color: #002244;
+      background-image: url(../img/fondonav.jpg);
+      background-size: cover;
+      background-blend-mode: color-burn;
+      background-color: $navy;
       a.brand-logo{
         //font-size: 2vmax;
         position: relative;
         display: block;
+        padding: 20%;
       }
       #nav-mobile{
         display: flex;
@@ -33,6 +37,10 @@
         width: 100%;
         align-items: center;
         margin-top: 10vh;
+        li a{
+          color: $blanco;
+          
+        }
       }
     }
   }
