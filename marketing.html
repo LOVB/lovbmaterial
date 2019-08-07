@@ -48,12 +48,27 @@
           </nav>
         </div>
         <!-- Menú desplegable en version med y min -->
-				<ul class="sidenav" id="mobile-demo">
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="marketing.html">Esto es Marketing</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-				</ul>
+				<ul id="sidenav-left" class="sidenav sidenav-fixed" style="transform: translateX(0px);">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="">
+            </div>
+            <a href="#user"><img class="circle" src="//unsplash.it/100"></a>
+            <a href="#name"><span class="grey-text name">John Doe</span></a>
+            <a href="#email"><span class="grey-text email">jdandturk@gmail.com</span></a>
+            </div></li>
+          <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+          <li><a href="#!">Second Link</a></li>
+          <li><div class="divider"></div></li>
+          <ul class="collapsible collapsible-accordion">
+            <li class="bold waves-effect">
+              <a class="collapsible-header" tabindex="0">
+                Pages
+              <i class="material-icons chevron">chevron_left</i>
+              </a>
+            </li>
+          </ul>
+          </ul>
 			</header>
       <!-- 
         >>>>>>>>>> MAIN <<<<<<<<<<
