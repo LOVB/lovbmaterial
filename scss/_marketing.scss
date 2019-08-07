@@ -2,7 +2,6 @@
 @import 'colors';
 
 /**Estilos generales de marketing */
-
 body#marketing {
   background-color: $blanco;
   padding-left: 300px;
@@ -10,33 +9,46 @@ body#marketing {
   flex-direction: column;
   font-size: 14px;
   min-height: 100%;
-  .collection li{
-    background-color: $naranja;
-  }
-  .navbar-fixed{
-    display: none;
-  }
- .sidenav{
-  	background-color: $naranja;
-	  li a{
-		  color: $blanco;	
+  header{
+    .navbar-fixed{
+      display: none;
+      //transform: scale(0,0);
+    }
+    .sidenav{
+      background-color: $navy;
+      transform: translateX(0px);
+      .collapsible li a,
+      .collapsible-header{
+        color: $blanco;
+      }
+      .collapsible .collection li a{
+        color: $naranja;
+      }
     }
   }
   main{
+    font-family: $ff-menu;
     flex: 1 0 auto;
+    h2{
+      font-size: 3rem;
+      color: $naranja;
+    }
   }
 }
 
 @media (max-width: 992px){
   body#marketing{
     padding-left: 0;
-    .navbar-fixed{
-      display: block;
-    }
-    .navbar{
-      background-color: $naranja;
-      left: 0;
-      width: 100vw;
+    header{
+      .navbar-fixed{
+        display: inherit;
+        //transform: scale(1,1);
+      }
+      .navbar{
+        background-color: $naranja;
+        left: 0;
+        width: 100vw;
+      }
     }
   }
 }
