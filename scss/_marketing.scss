@@ -3,6 +3,9 @@
 
 /**Estilos generales de marketing */
 body#marketing {
+  header{
+    height: 0;
+  }
   main{
 	  height: 100vh;
   }
@@ -36,10 +39,12 @@ body#marketing {
         flex-direction: column;
         width: 100%;
         align-items: center;
-        margin-top: 10vh;
-        li a{
+        margin-top: 10%;
+        li{
+          margin: 1rem 0;
+         a{
           color: $blanco;
-          
+          }
         }
       }
     }
