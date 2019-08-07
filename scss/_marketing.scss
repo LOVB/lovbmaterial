@@ -2,15 +2,19 @@
 @import 'colors';
 
 /**Estilos generales de marketing */
+
 body#marketing {
-  header{
-    height: 0;
+  background-color: $blanco;
+  padding-left: 300px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  min-height: 100%;
+  .collection li{
+    background-color: $naranja;
   }
-  main{
-	  height: 100vh;
-  }
-  nav{
-	  background-color: $naranja;
+  .navbar-fixed{
+    display: none;
   }
  .sidenav{
   	background-color: $naranja;
@@ -18,35 +22,21 @@ body#marketing {
 		  color: $blanco;	
     }
   }
+  main{
+    flex: 1 0 auto;
+  }
 }
 
-@media (min-width: 992px){
+@media (max-width: 992px){
   body#marketing{
-    nav{
-      height: 100vh;
-      background-image: url(../img/fondonav.jpg);
-      background-size: cover;
-      background-blend-mode: color-burn;
-      background-color: $navy;
-      a.brand-logo{
-        //font-size: 2vmax;
-        position: relative;
-        display: block;
-        padding: 20%;
-      }
-      #nav-mobile{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin-top: 10%;
-        li{
-          margin: 1rem 0;
-         a{
-          color: $blanco;
-          }
-        }
-      }
+    padding-left: 0;
+    .navbar-fixed{
+      display: block;
+    }
+    .navbar{
+      background-color: $naranja;
+      left: 0;
+      width: 100vw;
     }
   }
 }

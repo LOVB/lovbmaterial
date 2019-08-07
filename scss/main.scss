@@ -111,7 +111,7 @@ body#home{
       }
     }
   }
-  nav{
+  body#home nav{
     background-color: transparent;
     box-shadow: none;
     ul li {
@@ -133,7 +133,7 @@ body#home{
   }
 }
 @media (max-width: 600px){
-  body{
+  body#home{
     background-image: none;
   }
   main #portada{
