@@ -3,7 +3,7 @@
 
 /**Estilos generales de marketing */
 body#marketing {
-  background-color: $blanco;
+  background-color: $naranja;
   padding-left: 300px;
   display: flex;
   flex-direction: column;
@@ -12,17 +12,21 @@ body#marketing {
   header{
     .navbar-fixed{
       display: none;
-      //transform: scale(0,0);
     }
     .sidenav{
-      background-color: $navy;
+      background-color: #EFF2F1;
       transform: translateX(0px);
+      li a,
+      li a i,
       .collapsible li a,
+      .collapsible li a i{
+        color: $naranja;
+      }
       .collapsible-header{
-        color: $blanco;
+        color: $navy;
       }
       .collapsible .collection li a{
-        color: $naranja;
+        color: $navy;
       }
     }
   }
@@ -30,8 +34,8 @@ body#marketing {
     font-family: $ff-menu;
     flex: 1 0 auto;
     h2{
-      font-size: 3rem;
-      color: $naranja;
+      font-size: 2rem;
+      color: $blanco;
     }
   }
 }
@@ -42,7 +46,6 @@ body#marketing {
     header{
       .navbar-fixed{
         display: inherit;
-        //transform: scale(1,1);
       }
       .navbar{
         background-color: $naranja;
