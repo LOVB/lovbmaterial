@@ -19,11 +19,10 @@ body#marketing {
       li a,
       li a i,
       .collapsible li a,
-      .collapsible li a i{
-        color: $naranja;
-      }
+      .collapsible li a i,
       .collapsible-header{
-        color: $navy;
+        color: $naranja;
+        font-weight: bold;
       }
       .collapsible .collection li a{
         color: $navy;
