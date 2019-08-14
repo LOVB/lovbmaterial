@@ -2,9 +2,15 @@
 @import 'colors';
 
 /**Estilos generales de marketing */
+/**Nuevos estilos genericos */
 html{
   scroll-behavior: smooth;
 }
+.card i.material-icons{
+  background-color: $navy;
+}
+
+/**Cambios de estilos base */
 body#marketing {
   background-color: $naranja;
   padding-left: 300px;
@@ -17,7 +23,7 @@ body#marketing {
       display: none;
     }
     .sidenav{
-      background-color: #EFF2F1;
+      background-color: $fondo-sidebar;
       transform: translateX(0px);
       li a,
       li a i,
@@ -37,15 +43,29 @@ body#marketing {
     font-family: $ff-menu;
     flex: 1 0 auto;
     h2{
-      font-size: 2rem;
+      font-size: 3rem;
       color: $blanco;
+      padding: 1vh 0;
+    }
+    .box{
+      padding: 5em 0;
+      .container{
+        width: 90%;
+      }
+    }
+    .container{
+      width: 100%;
     }
     .section{
       min-height: 100vh;
       .header{
         color: $navy;
       }
+      
     }
+  }
+  footer p{
+    color: $blanco;
   }
 }
 

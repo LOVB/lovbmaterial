@@ -1,190 +1,277 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>LOVB_studio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title>LOVB_studio</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <!-- Librería de iconos de Materialize -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/materialize.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+  </head>
 
-  <!-- Librería de iconos de Materialize -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/materialize.min.css">
-  <link rel="stylesheet" href="css/main.min.css">
-
-</head>
-
-<body id="marketing">
-
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-  <!-- 
-    >>>>>>>>>>>>> HEADER <<<<<<<<<<
-    -->
-  <header>
-    <!-- Menú vertical para la version large -->
-    <div class="navbar-fixed">
-      <nav class="navbar">
-        <div class="nav-wrapper">
-          <a href="#" data-target="sidenav-left" class="right sidenav-trigger left hide-on-large"><i class="material-icons">menu</i></a>
-          
-        </div>
-      </nav>
-    </div>
-    <!-- Menú desplegable en version med y min -->
-    <ul id="sidenav-left" class="sidenav sidenav-fixed">
-      <li>
-        <div class="user-view">
-          <div class="responsive-img">
-            <img src="img/azullargomark.svg" alt="LOVB_studio.com">
+  <body id="marketing">
+<!-- 
+>>>>>>>>>>>>> HEADER <<<<<<<<<<
+-->
+    <header>
+      <!-- Menú vertical para la version large -->
+      <div class="navbar-fixed">
+        <nav class="navbar">
+          <div class="nav-wrapper">
+            <a
+              href="#"
+              data-target="sidenav-left"
+              class="right sidenav-trigger left hide-on-large"
+              ><i class="material-icons">menu</i></a
+            >
           </div>
-        </div>
-      </li>
-      <li><a href="index.html">Inicio <i class="material-icons ">home</i> </a></li>
-      <ul class="collection">
-        <li class="collection-header">
-          <a href=""> Esto es Marketing<i class="material-icons">arrow_downward</i></a>
+        </nav>
+      </div>
+      <!-- Menú desplegable en version med y min -->
+      <ul id="sidenav-left" class="sidenav sidenav-fixed">
+        <li>
+          <div class="user-view">
+            <div class="responsive-img">
+              <img src="img/azullargomark.svg" alt="LOVB_studio.com" />
+            </div>
+          </div>
         </li>
-        <li class="collection-item"><a href="#analitico" class="center-align">Analítico</a></li>
-        <li class="collection-item"><a href="#grafico" class="center-align">Gráfico</a></li>
-        <li class="collection-item"><a href="#digital" class="center-align">Digital</a></li>	
+        <li>
+          <a href="index.html">Inicio <i class="material-icons ">home</i> </a>
+        </li>
+        <ul class="collection">
+          <li class="collection-header">
+            <a href="#bienvenido"> Esto es Marketing<i class="material-icons">apps</i></a>
+          </li>
+          <li class="collection-item">
+            <a href="#analitico" class="center-align">Analítico</a>
+          </li>
+          <li class="collection-item">
+            <a href="#grafico" class="center-align">Gráfico</a>
+          </li>
+          <li class="collection-item">
+            <a href="#digital" class="center-align">Digital</a>
+          </li>
+        </ul>
+        <li>
+          <a href="#"><i class="material-icons">chat</i>Blog</a>
+        </li>
+        <li>
+          <a href="#"><i class="material-icons">email</i>Contacto</a>
+        </li>
       </ul>
-      <li><a href="#"><i class="material-icons">chat</i>Blog</a></li>
-      <li><a href="#"><i class="material-icons">email</i>Contacto</a></li>
-    </ul>
-  </header>
-  <!-- 
-    >>>>>>>>>> MAIN <<<<<<<<<<
-    -->
-  <main>
-    <div class="container">
+    </header>
+<!-- 
+>>>>>>>>>> MAIN <<<<<<<<<<
+-->
+    <main>
+      <div class="container">
+        <!-- Bienvenida -->
 
-      <!-- Bienvenida -->
+        <section class="box">
+          <h2 id="bienvenido" class="center-align">¡ BIENVENIDO !</h2>
 
-      <section class="box">
-        <h2>¡ BIENVENIDO !</h2>
-      </section>
+          <!-- Video y texto tipo card-panel -->
 
-      <!-- Video y texto tipo card-panel -->
-
-      <div class="row valign-wrapper">
-        <div class="card-panel grey lighten-5">
-          <div class="col s12 m4">
-              <video class="responsive-video" controls>
-                  <source src="img/vawes.mp4" type="video/mp4">
+          <div class="row valign-wrapper">
+            <div class="card-panel grey lighten-5">
+              <div class="col s12 m4">
+                <video class="responsive-video" controls>
+                  <source src="img/vawes.mp4" type="video/mp4" />
                 </video>
-          </div>
-          <div class="col s12 m8">
-            <p>Si has llegado hasta aquí es que hemos conseguido nuestro primer objetivo, tú encontrar lo que estás buscando y yo hecerte ver que soy capaz de llevarte hasta aquí. Si lo hago contigo imagina lo que consigo con tus clientes. <b>¡ ESTO ES MARKETING !</b></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Tarjetas de marketing tipo card con btn -->
-
-      <div class="row">
-        <h2 class="center-align">ESTO ES MARKETING ...</h2>
-
-        <!-- Tarjeta 1 Analítico -->
-
-        <div class="col s12 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/analitico.jpg">
-              <a href="#analitico" class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <span class="card-title">Marketing Analítico</span>
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+              </div>
+              <div class="col s12 m8">
+                <p>
+                  Si has llegado hasta aquí es que hemos conseguido nuestro
+                  primer objetivo, tú encontrar lo que estás buscando y yo
+                  hecerte ver que soy capaz de llevarte hasta aquí. Si lo hago
+                  contigo imagina lo que consigo con tus clientes.
+                  <b>¡ ESTO ES MARKETING !</b>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <!-- Tarjeta 2 Gráfico -->
+        <!-- Tarjetas de marketing tipo card con btn -->
 
-        <div class="col s12 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/grafico.jpg">
-              <a href="#grafico" class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <span class="card-title">Marketing Gráfico</span>
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        <section class="row box">
+          <h2 class="center-align">ESTO ES MARKETING ...</h2>
+
+          <!-- Tarjeta 1 Analítico -->
+
+          <div class="col s12 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/analitico.jpg" />
+                <a
+                  href="#analitico"
+                  class="btn-floating halfway-fab waves-effect waves-light"
+                  ><i class="material-icons">add</i></a
+                >
+              </div>
+              <div class="card-content">
+                <span class="card-title">Marketing Analítico</span>
+                <p>
+                  I am a very simple card. I am good at containing small bits of
+                  information. I am convenient because I require little markup
+                  to use effectively.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- Tarjeta 3 Digital -->
+          <!-- Tarjeta 2 Gráfico -->
 
-        <div class="col s12 l4">
-          <div class="card">
-            <div class="card-image">
-              <img src="img/digital.jpg">
-              <a href="#digital" class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
-            </div>
-            <div class="card-content">
-              <span class="card-title">Marketing Digital</span>
-              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+          <div class="col s12 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/grafico.jpg" />
+                <a
+                  href="#grafico"
+                  class="btn-floating halfway-fab waves-effect waves-light"
+                  ><i class="material-icons">add</i>
+                </a>
+              </div>
+              <div class="card-content">
+                <span class="card-title">Marketing Gráfico</span>
+                <p>
+                  I am a very simple card. I am good at containing small bits of
+                  information. I am convenient because I require little markup
+                  to use effectively.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+
+          <!-- Tarjeta 3 Digital -->
+
+          <div class="col s12 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/digital.jpg" />
+                <a
+                  href="#digital"
+                  class="btn-floating halfway-fab waves-effect waves-light"
+                  ><i class="material-icons">add</i></a
+                >
+              </div>
+              <div class="card-content">
+                <span class="card-title">Marketing Digital</span>
+                <p>
+                  I am a very simple card. I am good at containing small bits of
+                  information. I am convenient because I require little markup
+                  to use effectively.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
 
 <!-- SECCIONES DE MARKETING EN FORMATO PARALLAX -->
-<scroll-container>
-      <div class="parallax-container">
-        <div class="parallax"><img src="img/analitico.jpg"></div>
-      </div>
-      <div id="analitico" class="section white">
-        <div class="row container">
-          <h2 class="header">Marketin Analítico</h2>
-          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="img/grafico.jpg"></div>
-      </div>
-      <div id="grafico" class="section white">
-        <div class="row container">
-          <h2 class="header">Marketing Gráfico</h2>
-          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-      </div>
-      <div class="parallax-container">
-        <div class="parallax"><img src="img/digital.jpg"></div>
-      </div>
-      <div id="digital" class="section white">
-        <div class="row container">
-          <h2 class="header">Marketing Digital</h2>
-          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-        </div>
-      </div>
-</scroll-container>
-    </div>
-  </main>
 
-<!--
+        <section class="box">
+          <div class="parallax-container">
+            <div class="parallax"><img src="img/analitico.jpg" /></div>
+          </div>
+          <div id="analitico" class="section white">
+            <div class="row container">
+              <h2 class="header">Marketin Analítico</h2>
+              <video class="responsive-video" width="480" height="360" controls>
+                <source src="img/video.mp4" type="video/mp4">
+              </video>
+              <p>
+                Parallax is an effect where the background content or image in
+                this case, is moved at a different speed than the foreground
+                content while scrolling.
+              </p>
+              <div class="carousel">
+                  <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+                  <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+                  <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+                  <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+                  <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+                </div>
+                    
+            </div>
+          </div>
+          <div class="parallax-container">
+            <div class="parallax"><img src="img/grafico.jpg" /></div>
+          </div>
+          <div id="grafico" class="section white">
+            <div class="row container">
+              <h2 class="header">Marketing Gráfico</h2>
+              <p>
+                Parallax is an effect where the background content or image in
+                this case, is moved at a different speed than the foreground
+                content while scrolling.
+              </p>
+            </div>
+          </div>
+          <div class="parallax-container">
+            <div class="parallax"><img src="img/digital.jpg" /></div>
+          </div>
+          <div id="digital" class="section white">
+            <div class="row container">
+              <h2 class="header">Marketing Digital</h2>
+              <p>
+                Parallax is an effect where the background content or image in
+                this case, is moved at a different speed than the foreground
+                content while scrolling.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+<!-- 
+ >>>>>>>>>>>> FOOTER <<<<<<<<<<<
+-->
+    <footer class="container">
+        <div class="col s12">
+          <p class="center-align">LOVB_studio 2019 . info@lovbstudio.com . +34 603 631 149</p>
+        </div>
+    </footer>
+
+    <!--
   >>>>>>>>> SCRIPTS <<<<<<<<<<
 -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
-  <script src="js/materialize.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.1.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/materialize.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function() {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>

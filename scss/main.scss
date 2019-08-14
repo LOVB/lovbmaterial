@@ -25,6 +25,7 @@ html{
 }
 p{
   color: $secundario;
+  font-size: 1.3em;
 }
 body#home{
   background-color: $color-fondo;
@@ -71,11 +72,8 @@ body#home{
       background-color: rgba($color: $blanco ,$alpha: 0);
       margin-top: 5vh;
       box-shadow: 0 0 0 #000;
-       p {
-        font-size: 1em;
-        span{
+       p span{
           font-weight: bold;
-        }
       }
     }
   }
