@@ -2,6 +2,9 @@
 @import 'colors';
 
 /**Estilos generales de marketing */
+html{
+  scroll-behavior: smooth;
+}
 body#marketing {
   background-color: $naranja;
   padding-left: 300px;
@@ -18,14 +21,15 @@ body#marketing {
       transform: translateX(0px);
       li a,
       li a i,
-      .collapsible li a,
-      .collapsible li a i,
-      .collapsible-header{
+      .collection li a,
+      .collection li a i,
+      .collection-header{
         color: $naranja;
         font-weight: bold;
       }
-      .collapsible .collection li a{
+      .collection .collection li a{
         color: $navy;
+        padding: 0;
       }
     }
   }
@@ -35,6 +39,12 @@ body#marketing {
     h2{
       font-size: 2rem;
       color: $blanco;
+    }
+    .section{
+      min-height: 100vh;
+      .header{
+        color: $navy;
+      }
     }
   }
 }

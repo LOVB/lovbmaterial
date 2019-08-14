@@ -23,6 +23,9 @@ html{
   padding: 0;
   height: 100vh;
 }
+p{
+  color: $secundario;
+}
 body#home{
   background-color: $color-fondo;
 	background-image: url(../img/bgimage.jpg);

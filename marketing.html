@@ -47,24 +47,16 @@
         </div>
       </li>
       <li><a href="index.html">Inicio <i class="material-icons ">home</i> </a></li>
-      <div class="divider"></div>
-      <ul class="collapsible">
-        <li>
-          <div class="collapsible-header">
-            <i class="material-icons right">arrow_downward
-              </i>Esto es Marketing</div>
-            <div class="collapsible-body">
-              <ul class="collection">
-                <li class="collection-item"><a href="#">Analítico</a></li>
-                <li class="collection-item"><a href="#">Gráfico</a></li>
-                <li class="collection-item"><a href="#">Digital</a></li>	
-              </ul>
-            </div>
+      <ul class="collection">
+        <li class="collection-header">
+          <a href=""> Esto es Marketing<i class="material-icons">arrow_downward</i></a>
         </li>
-        <li><div class="divider"></div></li>
-        <li><a href="#"><i class="material-icons">chat</i>Blog</a></li>
-        <li><a href="#"><i class="material-icons">email</i>Contacto</a></li>
+        <li class="collection-item"><a href="#analitico" class="center-align">Analítico</a></li>
+        <li class="collection-item"><a href="#grafico" class="center-align">Gráfico</a></li>
+        <li class="collection-item"><a href="#digital" class="center-align">Digital</a></li>	
       </ul>
+      <li><a href="#"><i class="material-icons">chat</i>Blog</a></li>
+      <li><a href="#"><i class="material-icons">email</i>Contacto</a></li>
     </ul>
   </header>
   <!-- 
@@ -105,7 +97,7 @@
           <div class="card">
             <div class="card-image">
               <img src="img/analitico.jpg">
-              <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+              <a href="#analitico" class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
             </div>
             <div class="card-content">
               <span class="card-title">Marketing Analítico</span>
@@ -120,7 +112,7 @@
           <div class="card">
             <div class="card-image">
               <img src="img/grafico.jpg">
-              <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+              <a href="#grafico" class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
             </div>
             <div class="card-content">
               <span class="card-title">Marketing Gráfico</span>
@@ -135,7 +127,7 @@
           <div class="card">
             <div class="card-image">
               <img src="img/digital.jpg">
-              <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
+              <a href="#digital" class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons">add</i></a>
             </div>
             <div class="card-content">
               <span class="card-title">Marketing Digital</span>
@@ -146,21 +138,36 @@
       </div>
 
 <!-- SECCIONES DE MARKETING EN FORMATO PARALLAX -->
-<div class="parallax-container">
-  <div class="parallax"><img src="img/analitico.jpg"></div>
-</div>
-<div class="section white">
-  <div class="row container">
-    <h2 class="header">Parallax</h2>
-    <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
-  </div>
-</div>
-<div class="parallax-container">
-  <div class="parallax"><img src="img/grafico.jpg"></div>
-</div>
-
+<scroll-container>
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/analitico.jpg"></div>
+      </div>
+      <div id="analitico" class="section white">
+        <div class="row container">
+          <h2 class="header">Marketin Analítico</h2>
+          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/grafico.jpg"></div>
+      </div>
+      <div id="grafico" class="section white">
+        <div class="row container">
+          <h2 class="header">Marketing Gráfico</h2>
+          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        </div>
+      </div>
+      <div class="parallax-container">
+        <div class="parallax"><img src="img/digital.jpg"></div>
+      </div>
+      <div id="digital" class="section white">
+        <div class="row container">
+          <h2 class="header">Marketing Digital</h2>
+          <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        </div>
+      </div>
+</scroll-container>
     </div>
-  
   </main>
 
 <!--
