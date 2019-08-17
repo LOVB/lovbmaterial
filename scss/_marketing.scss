@@ -7,7 +7,7 @@ html{
   scroll-behavior: smooth;
 }
 .card i.material-icons{
-  background-color: $navy;
+  background-color: #88F9D4;
 }
 
 /**Cambios de estilos base */
@@ -23,7 +23,7 @@ body#marketing {
       display: none;
     }
     .sidenav{
-      background-color: $fondo-sidebar;
+      background-color: $fondo;
       transform: translateX(0px);
       li a,
       li a i,
@@ -43,6 +43,7 @@ body#marketing {
     font-family: $ff-menu;
     flex: 1 0 auto;
     h2{
+      font-family: $ff-serif;
       font-size: 3rem;
       color: $blanco;
       padding: 1vh 0;
