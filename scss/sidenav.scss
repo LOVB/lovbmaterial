@@ -1,0 +1,77 @@
+@import 'colors';
+
+body{
+  padding-left: 300px;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  min-height: 100%;
+}
+
+header{
+  .navbar-fixed{
+    display: none;
+  }
+  .sidenav{
+    background-color: $fondo-sidebar;
+    transform: translateX(0px);
+    li a,
+    li a i.material-icons,
+    .collection li a,
+    .collection li a i,
+    .collection-header{
+      color: $naranja;
+      //font-weight: bold;
+    }
+    .collection .collection li a{
+      color: $navy;
+      padding: 0;
+    }
+  }
+}
+
+main{
+  font-family: $ff-menu;
+  flex: 1 0 auto;
+  h2{
+    font-size: 3rem;
+    color: $navy;
+    padding: 1vh 0;
+  }
+  .box{
+    padding: 5em 0;
+    .container{
+      width: 90%;
+    }
+  }
+  .container{
+    width: 90%;
+  }
+  .section{
+    min-height: 100vh;
+    .header{
+      color: $navy;
+    }
+    
+  }
+}
+footer{
+  background-color: $navy;
+  width: 100%;
+}
+
+@media (max-width: 992px){
+  body{
+    padding-left: 0;
+    header{
+      .navbar-fixed{
+        display: inherit;
+      }
+      .navbar{
+        background-color: $naranja;
+        left: 0;
+        width: 100vw;
+      }
+    }
+  }
+}
