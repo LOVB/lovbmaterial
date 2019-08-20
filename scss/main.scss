@@ -88,7 +88,7 @@ body#home{
 #home footer{
   grid-area: footer;
   p{
-    color: $blanco;
+    color: rgba($color: $blanco, $alpha: 0.5);
   }
 }
 .centrado{
@@ -113,8 +113,9 @@ body#home{
       justify-content: space-around;
       min-width: 15vh;
       margin-bottom: 1em;
-      a img{
-        width: 30px;
+      a ion-icon{
+        color: $blanco;
+        font-size: 1.5vw;
       }
     }
   }
