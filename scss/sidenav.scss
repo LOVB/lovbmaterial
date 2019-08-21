@@ -13,7 +13,8 @@ header{
     display: none;
   }
   .sidenav{
-    background-color: $fondo-sidebar;
+
+    background-color: $fondo;
     transform: translateX(0px);
     li a,
     li a i.material-icons,
