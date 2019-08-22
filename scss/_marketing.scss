@@ -7,61 +7,19 @@ html{
   scroll-behavior: smooth;
 }
 .card i.material-icons{
-  background-color: $navy;
+  background-color: #6D780C;
 }
 
 /**Cambios de estilos base */
-body#marketing {
+body {
   background-color: $naranja;
-  padding-left: 300px;
-  display: flex;
-  flex-direction: column;
-  font-size: 14px;
-  min-height: 100%;
-  header{
-    .navbar-fixed{
-      display: none;
-    }
-    .sidenav{
-      background-color: $fondo-sidebar;
-      transform: translateX(0px);
-      li a,
-      li a i,
-      .collection li a,
-      .collection li a i,
-      .collection-header{
-        color: $naranja;
-        font-weight: bold;
-      }
-      .collection .collection li a{
-        color: $navy;
-        padding: 0;
-      }
-    }
-  }
   main{
-    font-family: $ff-menu;
-    flex: 1 0 auto;
     h2{
-      font-size: 3rem;
+      font-family: $ff-serif;
       color: $blanco;
-      padding: 1vh 0;
     }
-    .box{
-      padding: 5em 0;
-      .container{
-        width: 90%;
-      }
-    }
-    .container{
-      width: 100%;
-    }
-    .section{
-      min-height: 100vh;
-      .header{
-        color: $navy;
-      }
-      
+    .carousel .carousel-item img{
+      object-fit: fill;
     }
   }
   footer p{

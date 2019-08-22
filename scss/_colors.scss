@@ -1,15 +1,13 @@
 // COLORES
-$color-fondo: #C5BABE;
-$naranja:rgb(251, 79, 20);
-$navy: rgb(0, 34, 68);
-$blanco: rgb(255, 250, 240);
-$secundario: rgb(85, 107, 130);
-$fondo-sidebar: #eff2f1;
+$blanco: #FFFAF0;
+$fondo: #e0e0e0;
+$naranja:#FF5100;
+$navy: #092143;
+$secundario: #2475C7;
 
 // FUENTES
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Serif+Pro:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Raleway:400,700&display=swap');
 
-$ff-serif: 'Source Serif Pro', serif;
-$ff-sans: 'Source Sans Pro', sans-serif;
+$ff-serif: 'Merriweather', serif;
+$ff-sans: 'Raleway', sans-serif;
 $ff-menu: 'Varela Round', sans-serif;
