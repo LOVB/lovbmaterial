@@ -1,9 +1,11 @@
 // COLORES
-$blanco: #FFFAF0;
-$fondo: #e0e0e0;
+$blanco: #fff;
+$fondo: #fff;
 $naranja:#FF5100;
 $navy: #092143;
 $secundario: #2475C7;
+$titulo: #606060;
+$texto: #909090; 
 
 // FUENTES
 @import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Raleway:400,700&display=swap');
@@ -11,3 +13,12 @@ $secundario: #2475C7;
 $ff-serif: 'Merriweather', serif;
 $ff-sans: 'Raleway', sans-serif;
 $ff-menu: 'Varela Round', sans-serif;
+
+h1,h2,h3,h4,h5{
+  color: $titulo;
+  font-family: $ff-serif;
+}
+p ,span{
+  color: $texto;
+  font-family: $ff-sans;
+}

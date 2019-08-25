@@ -25,7 +25,6 @@ header{
     .collection li a i,
     .collection-header{
       color: $naranja;
-      //font-weight: bold;
     }
     .collection .collection li a{
       color: $navy;
@@ -39,7 +38,6 @@ main{
   flex: 1 0 auto;
   h2{
     font-size: 3rem;
-    color: $navy;
     padding: 1vh 0;
   }
   .box{
@@ -53,11 +51,7 @@ main{
   }
   .section{
     min-height: 100vh;
-    .header{
-      color: $navy;
-    }
-    
-  }
+      }
 }
 footer{
   background-color: $navy;

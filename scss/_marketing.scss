@@ -6,17 +6,18 @@
 html{
   scroll-behavior: smooth;
 }
-.card i.material-icons{
-  background-color: #6D780C;
-}
+
 
 /**Cambios de estilos base */
-body {
+body#marketing {
   background-color: $naranja;
   main{
     h2{
       font-family: $ff-serif;
       color: $blanco;
+    }
+    .card i.material-icons{
+      background-color: #6D780C;
     }
     .carousel .carousel-item img{
       object-fit: fill;

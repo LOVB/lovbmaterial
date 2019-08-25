@@ -4,13 +4,21 @@
 
  @import 'colors';
 
-$ff-text: #9E9E9E;
-
  body#contacto{
-  background-color: #eee;
+  background-color: $fondo;
   main{
     h2{
-      color: #424242;
+      margin-bottom: 0;
+    }
+    p{
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    img{
+      width: 100%;
+    }
+    .card-toolbar{
+      padding: 24px;
     }
   }
- }
+}
