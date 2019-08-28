@@ -11,6 +11,12 @@ html{
 /**Cambios de estilos base */
 body#marketing {
   background-color: $naranja;
+  header .sidenav .collection .collection-header{
+    background-color: $naranja;
+    a, a i{
+      color: $blanco;
+    }
+  }
   main{
     h2{
       font-family: $ff-serif;
@@ -22,9 +28,9 @@ body#marketing {
     .carousel .carousel-item img{
       object-fit: fill;
     }
-  }
-  footer p{
-    color: $blanco;
+    .section h2.header{
+      color: $titulo !important;
+    }
   }
 }
 
