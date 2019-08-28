@@ -12,8 +12,10 @@
   <link rel="shortcut icon" href="icon.png" type="image/x-icon">
 
   <!-- Librería de iconos de Materialize -->
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Importación de iconos de Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-  
   <link rel="stylesheet" href="css/materialize.min.css">
   <link rel="stylesheet" href="css/main.min.css">
 
@@ -36,6 +38,7 @@
   <header>
     <nav id="nav-vertical" class="navbar-fixed">
       <div class="nav-wrapper">
+        <a href="#" class="brand-logo hide-on-large-only center"><img class=" responsive-img" src="img/lobobalncomobil.svg" alt="logo lovb studio"> </a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down largo">
           <li><a href="index.html">Inicio</a></li>
@@ -47,17 +50,37 @@
     </nav>
 <!-- Menu para movil en sidebar oculto -->
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="marketing.html">Esto es Marketing</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
+        <li>
+            <div class="user-view">
+              <div class="responsive-img">
+                <img src="img/azullargomark.svg" alt="LOVB_studio.com" />
+              </div>
+            </div>
+          </li>
+          <li>
+            <a href="index.html">Inicio <i class="material-icons ">home</i> </a>
+          </li>
+          <li>
+            <a href="marketing.html">
+              Esto es Marketing<i class="material-icons"
+                >keyboard_arrow_down</i
+              ></a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="material-icons">collections_bookmark</i>Blog</a>
+          </li>
+          <li>
+            <a href="contacto.html"
+              ><i class="material-icons">device_hub</i>Contacto</a
+            >
+          </li>
     </ul>
   </header>
 <!-- 
  >>>>>>>>>>> MAIN <<<<<<<<<<<<<
 -->
-  <main class="container-fluid">
-    <div id="portada" class="row">
+    <main id="portada" class="row">
       <div class="col l6 offset-l6 s12">
         <div class="centrado">
           <img id="logolargo" class="responsive-img" src="img/blancolargomark.svg" alt="LOVB_studio">
@@ -67,13 +90,12 @@
           <p class="flow-text">"El <span>Marketing Manager</span>  es el responsable encargado de diseñar, organizar, desarrollar y gestionar la comunicación y el marketing de la empresa, permitiendo que esta logre alcanzar los objetivos organizacionales en determinado tiempo."</p>
         </div>
       </div>
-    </div>
-  </main>
+    </main>
 
 <!-- 
  >>>>>>>>>>>> FOOTER <<<<<<<<<<<
 -->
-  <footer class="container">
+  <footer>
     <div class="col s12">
       <p class="center-align">LOVB_studio 2019 . info@lovbstudio.com . +34 603 631 149</p>
     </div>

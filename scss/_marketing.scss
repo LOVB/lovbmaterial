@@ -11,12 +11,16 @@ html{
 /**Cambios de estilos base */
 body#marketing {
   background-color: $naranja;
-  header .sidenav .collection .collection-header{
-    background-color: $naranja;
+  header{
+
+   .sidenav .collection .collection-header{
+      background-color: $naranja;
     a, a i{
       color: $blanco;
     }
   }
+
+  } 
   main{
     h2{
       font-family: $ff-serif;
