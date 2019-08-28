@@ -17,8 +17,12 @@ header{
     display: none;
   }
   .sidenav{
-    background-color: $fondo;
+    background-color: $blanco;
     transform: translateX(0px);
+    li a img{
+      width: 30px;
+      margin-right: 2em;
+    }
     li a,
     li a i.material-icons,
     .collection li a,
