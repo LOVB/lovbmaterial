@@ -29,6 +29,12 @@ p{
   font-size: 1.2em;
   font-weight: 300;
 }
+.centrado{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 body#home{
   background-color: $blanco;
 	background-image: url(../img/bgimage.jpg);
@@ -43,25 +49,24 @@ body#home{
     "header"
     "main"
     "footer";
-}
-#home header{
+
+  header{
   grid-area: header;
-  nav li{
-    padding-right: 5vw;
-  }
-  .brand-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    img{
-      width: 80%;
+    nav li{
+      padding-right: 5vw;
+    }
+    .brand-logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      img{
+        width: 80%;
+      }
     }
   }
-}
-#home main{
-  grid-area: main;
-  #portada{
+  main#portada{
+    grid-area: main;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -74,29 +79,27 @@ body#home{
       background-color: rgba($color: $blanco ,$alpha: 0);
       margin-top: 5vh;
       box-shadow: 0 0 0 #000;
-       p {
+      p {
         font-size: 1.2rem;
         color: $texto;
         span{
-           font-weight: bold;
-       }
+          font-weight: bold;
+        }
       }
     }
   }
-}
-/*HOME FOOTER*/
-#home footer{
-  grid-area: footer;
-  p{
-    color: rgba($color: $blanco, $alpha: 0.5);
+  /*HOME FOOTER*/
+  footer{
+    grid-area: footer;
+    p{
+      color: rgba($color: $blanco, $alpha: 0.5);
+    }
   }
+  
 }
-.centrado{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/*
+>>>>>>>>>> MEDIA QUERIES <<<<<<<<<< 
+*/
 @media (min-width: 992px){
   #barraLateral{
     left: 140px;
@@ -132,6 +135,7 @@ body#home{
     }
   }
 }
+/** max-width 992 */
 @media (max-width: 992px){
   #barraLateral{
     display: none;
@@ -140,11 +144,13 @@ body#home{
     background-color: rgba($color: $naranja, $alpha: 1);
   }
 }
-@media (max-width: 600px){
+/**max-width 576px */
+@media (max-width: 576px){
   body#home{
     background-image: none;
   
   main#portada{
+    padding-top: 10vw;
     .card-panel{
       background-color: rgba($color: $blanco, $alpha: 0.5);
       box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
