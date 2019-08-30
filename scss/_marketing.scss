@@ -12,28 +12,40 @@ html{
 body#marketing {
   background-color: $naranja;
   header{
-
    .sidenav .collection .collection-header{
       background-color: $naranja;
-    a, a i{
-      color: $blanco;
+      a, a i{
+        color: $blanco;
+      }
     }
-  }
-
   } 
   main{
     h2{
       font-family: $ff-serif;
       color: $blanco;
     }
+    .exp{
+      color: $blanco;
+      margin: 4vw 0;
+    }
     .card i.material-icons{
-      background-color: #6D780C;
+      background-color: $secundario;
+    }
+    .card .card-content .card-title{
+      color: $navy;
+      font-weight: 500;
     }
     .carousel .carousel-item img{
       object-fit: fill;
     }
     .section h2.header{
-      color: $titulo !important;
+      color: $titulo;
+    }
+    .box2{
+      margin-top: 10vw;
+    }
+    .box3{
+      margin-top: 15vw;
     }
   }
 }
