@@ -8,9 +8,14 @@
  /*
  * 1. Importaciones de estilos 
  */
-@import 'contacto'; /**Estilos de contacto.html */
-@import 'marketing';/**Estilos de marketing.html */
-@import 'colors';/**Paleta de colores y fuentes del tema */
+/**Estilos de blog.html */
+@import 'blog';
+ /**Estilos de contacto.html */
+@import 'contacto';
+/**Estilos de marketing.html */
+@import 'marketing';
+/**Paleta de colores y fuentes del tema */
+@import 'colors';
 
 /**
  * Estilos generales

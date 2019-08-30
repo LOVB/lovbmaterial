@@ -13,10 +13,7 @@ body#marketing {
   background-color: $naranja;
   header{
    .sidenav .collection .collection-header{
-      background-color: $naranja;
-      a, a i{
-        color: $blanco;
-      }
+      background-color: $hover-sidenav;
     }
   } 
   main{
