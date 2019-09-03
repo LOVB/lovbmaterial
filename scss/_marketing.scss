@@ -7,10 +7,15 @@ html{
   scroll-behavior: smooth;
 }
 
-
+.btn{
+  text-transform: none;
+  background-color: $naranja;
+  color: $blanco;
+}
 /**Cambios de estilos base */
 body#marketing {
   background-color: $naranja;
+
   header{
    .sidenav .collection .collection-header{
       background-color: $hover-sidenav;
@@ -32,12 +37,21 @@ body#marketing {
       color: $navy;
       font-weight: 500;
     }
-    .carousel .carousel-item img{
-      object-fit: fill;
+    .carousel .carousel-item {
+      background-image: url(../img/finalcial.jpg);
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+      border-radius: 10px;
     }
-    .section h2.header{
-      color: $titulo;
-    }
+    .section {
+      .header {
+        color: $titulo;
+      }
+      p{
+        margin: 5vw 2em;
+      }
+    } 
     .box2{
       margin-top: 10vw;
     }
