@@ -38,11 +38,22 @@ body#marketing {
       font-weight: 500;
     }
     .carousel .carousel-item {
-      background-image: url(../img/finalcial.jpg);
       background-size: cover;
       background-position: center;
       background-blend-mode: multiply;
       border-radius: 10px;
+      p{
+        margin: 20px;
+      }
+    }
+    #analitico .carousel .carousel-item {
+      background-image: url(../img/finalcial.jpg);
+    }
+    #grafico .carousel .carousel-item {
+      background-image: url(../img/design.jpg);
+    }
+    #digital .carousel .carousel-item {
+      background-image: url(../img/social.jpg);
     }
     .section {
       .header {
