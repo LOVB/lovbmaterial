@@ -26,6 +26,9 @@ body#marketing {
       font-family: $ff-serif;
       color: $blanco;
     }
+    .box3 .carousel-fixed-item{
+      margin-top: 1em;
+    }
     .exp{
       color: $blanco;
       margin: 4vw 0;
@@ -37,15 +40,49 @@ body#marketing {
       color: $navy;
       font-weight: 500;
     }
-    .carousel .carousel-item {
-      background-size: cover;
-      background-position: center;
-      background-blend-mode: multiply;
-      border-radius: 10px;
-      p{
-        margin: 20px;
+    .carousel{
+      .indicators .indicator-item.active{
+        background-color: $naranja;
+      }
+      .indicators .indicator-item{
+        background-color: rgba($color: $naranja, $alpha: 0.3);
+      }
+      .carousel-item {
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: multiply;
+        border-radius: 10px;
+        h2{
+          margin: 1em;
+          font-size: calc(1em + 1vw);
+        }
+        p{
+          margin: 20px;
+          //font-size: calc(.3em + 1vw);
+        }
+        ul{
+          text-align: left;
+          li{
+            color: $blanco;
+            //font-size: calc(1em + 1vw);
+          }
+        }
+    } 
+      .logos{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $blanco;
+        padding: 2em 3em;
+        margin: 0 1em;
+        img{
+          width: 27%;
+        }
       }
     }
+    /*
+    * Imagenes de background del carousel 
+    */
     #analitico .carousel .carousel-item {
       background-image: url(../img/finalcial.jpg);
     }
@@ -80,10 +117,25 @@ body#marketing {
         display: inherit;
       }
       .navbar{
-        background-color: $naranja;
+        //background-color: $naranja;
         left: 0;
         width: 100vw;
       }
     }
+    main .carousel .carousel-item p{
+      font-size: calc(7px + 1vw);
+    }
+    main .carousel .carousel-item ul li{
+      font-size: calc(.5em + 1vw);
+    }
+    main .carousel .carousel-item ul li.collection-item{
+      font-size: calc(.4em + 1vw);
+    }
   }
+}
+@media (max-width: 720){
+
+}
+@media (max-width: 540){
+
 }

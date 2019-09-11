@@ -73,9 +73,18 @@ footer{
         display: inherit;
       }
       .navbar{
-        background-color: $naranja;
-        left: 0;
+        background-color: $navy;
+        //left: 0;
         width: 100vw;
+        .brand-logo {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          img{
+            max-width: 200px;
+          }
+        }
       }
     }
   }

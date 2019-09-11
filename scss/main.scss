@@ -40,6 +40,7 @@ p{
   align-items: center;
   justify-content: center;
 }
+
 body#home{
   background-color: $blanco;
 	background-image: url(../img/bgimage.jpg);
@@ -56,20 +57,11 @@ body#home{
     "footer";
 
   header{
-  grid-area: header;
-    nav li{
-      padding-right: 5vw;
-    }
-    .brand-logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      img{
-        width: 80%;
+    grid-area: header;
+      nav li{
+        padding-right: 5vw;
       }
     }
-  }
   main#portada{
     grid-area: main;
     align-items: center;
