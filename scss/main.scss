@@ -34,11 +34,23 @@ p{
   font-size: 1.2em;
   font-weight: 300;
 }
+blockquote{
+  border-left-color: $naranja;
+  margin: 4rem 0;
+  p{
+    margin: 0;
+    font-size: 1.5rem;
+  }
+}
 .centrado{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+footer.page-footer{
+  background-color: $navy;
+  width: 100%;
 }
 
 body#home{
