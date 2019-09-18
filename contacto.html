@@ -22,61 +22,7 @@
   </head>
 
   <body id="contacto">
-    <!--
->>>>>>>>>> BLOQUE COOKIES <<<<<<<<<<
--->
-  <div id="barraaceptacion" class="row">
-      <div class="col s12">
-        <div class="card blue-grey darken-1">
-          <div class="card-content white-text">
-            <span class="card-title cyan-text lighten-5">Politica de cookies</span>
-            <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
-                Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.</p>
-          </div>
-          <div class="card-action center-align">
-              <a href="javascript:void(0);" class="orange-text lighten-5" onclick="PonerCookie();">Acepto</a>
-              <a href="legal.html#cookies" target="_blank" class="orange-text lighten-5">Más información</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  
-  <script>
-  function getCookie(c_name){
-    var c_value = document.cookie;
-    var c_start = c_value.indexOf(" " + c_name + "=");
-    if (c_start == -1){
-        c_start = c_value.indexOf(c_name + "=");
-    }
-    if (c_start == -1){
-        c_value = null;
-    }else{
-        c_start = c_value.indexOf("=", c_start) + 1;
-        var c_end = c_value.indexOf(";", c_start);
-        if (c_end == -1){
-            c_end = c_value.length;
-        }
-        c_value = unescape(c_value.substring(c_start,c_end));
-    }
-    return c_value;
-  }
-  
-  function setCookie(c_name,value,exdays){
-    var exdate=new Date();
-    exdate.setDate(exdate.getDate() + exdays);
-    var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-    document.cookie=c_name + "=" + c_value;
-  }
-  
-  if(getCookie('tiendaaviso')!="1"){
-    document.getElementById("barraaceptacion").style.display="block";
-  }
-  function PonerCookie(){
-    setCookie('tiendaaviso','1',365);
-    document.getElementById("barraaceptacion").style.display="none";
-  }
-  </script>
-  <!--//FIN BLOQUE COOKIES-->
+
 <!-- 
 >>>>>>>>>>>>> HEADER <<<<<<<<<<
 -->
@@ -143,6 +89,7 @@
         </section>
         <!-- Seccion de contacto -->
         <section class="row">
+          <h5>De forma directa</h5>
           <ul class="collapsible">
             <!-- Telefono -->
             <li>
@@ -184,6 +131,12 @@
                   ><i class="material-icons left">send</i>Mandar</a>
               </div>
             </li>
+          </ul>
+        </section>
+        <!-- Seccion de redes sociales -->
+        <section class="row">
+          <h5>Por redes sociales</h5>
+          <ul class="collapsible">
             <!-- Twitter -->
             <li>
               <div class="collapsible-header valign-wrapper">
@@ -240,7 +193,25 @@
         </p>
       </div>
     </footer>
-
+<!--
+>>>>>>>>>> BLOQUE COOKIES <<<<<<<<<<
+-->
+  <div id="barraaceptacion" class="row">
+    <div class="col s12">
+      <div class="card blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title cyan-text lighten-5">Politica de cookies</span>
+          <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
+              Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.</p>
+        </div>
+        <div class="card-action center-align">
+            <a href="javascript:void(0);" class="orange-text lighten-5" onclick="PonerCookie();">Acepto</a>
+            <a href="legal.html#cookies" target="_blank" class="orange-text lighten-5">Más información</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--//FIN BLOQUE COOKIES-->
 <!--
 >>>>>>>>> SCRIPTS <<<<<<<<<<
 -->
@@ -257,6 +228,7 @@
     </script>
     <script src="js/materialize.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="js/cookies.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

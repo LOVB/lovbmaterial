@@ -110,8 +110,7 @@
       <div class="card blue-grey darken-1">
         <div class="card-content">
           <span class="card-title cyan-text lighten-5">Politica de cookies</span>
-          <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
-              Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.</p>
+          <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.</p>
         </div>
         <div class="card-action center-align">
           <a href="javascript:void(0);" class="orange-text lighten-5" onclick="PonerCookie();">Acepto</a>
@@ -120,44 +119,7 @@
       </div>
     </div>
   </div>
-
-<script>
-function getCookie(c_name){
-  var c_value = document.cookie;
-  var c_start = c_value.indexOf(" " + c_name + "=");
-  if (c_start == -1){
-      c_start = c_value.indexOf(c_name + "=");
-  }
-  if (c_start == -1){
-      c_value = null;
-  }else{
-      c_start = c_value.indexOf("=", c_start) + 1;
-      var c_end = c_value.indexOf(";", c_start);
-      if (c_end == -1){
-          c_end = c_value.length;
-      }
-      c_value = unescape(c_value.substring(c_start,c_end));
-  }
-  return c_value;
-}
-
-function setCookie(c_name,value,exdays){
-  var exdate=new Date();
-  exdate.setDate(exdate.getDate() + exdays);
-  var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
-  document.cookie=c_name + "=" + c_value;
-}
-
-if(getCookie('tiendaaviso')!="1"){
-  document.getElementById("barraaceptacion").style.display="block";
-}
-function PonerCookie(){
-  setCookie('tiendaaviso','1',365);
-  document.getElementById("barraaceptacion").style.display="none";
-}
-</script>
 <!--//FIN BLOQUE COOKIES-->
-
 <!--
   >>>>>>>>> SCRIPTS <<<<<<<<<<
 -->
@@ -165,6 +127,7 @@ function PonerCookie(){
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/materialize.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/cookies.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
