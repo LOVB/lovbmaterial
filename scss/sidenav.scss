@@ -22,6 +22,9 @@ header{
   .sidenav{
     background-color: $blanco;
     transform: translateX(0px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     li a img{
       width: 30px;
       margin-right: 2em;
@@ -36,6 +39,30 @@ header{
     .collection .collection li a{
       color: $navy;
       padding: 0;
+    }
+    #sidesocial{
+      display: flex;
+      justify-content: space-around;
+      padding: 0 1vw;
+      a{
+        height: unset;
+        padding: 1em;
+        text-align: center;
+        &:hover{
+          background-color: #fdf5e6;
+        }
+        i{
+          font-size: 1.5em;
+          margin: 0;
+          color: $naranja;
+        }
+      }
+    }
+    #sidelegal{
+      a{
+        text-align: center;
+        opacity: 0.5;
+      }
     }
   }
 }
