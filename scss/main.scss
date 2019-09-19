@@ -161,6 +161,51 @@ body#home{
   nav{
     background-color: rgba($color: $naranja, $alpha: 1);
   }
+  #mobile-demo {
+    background-color: $blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    li a img{
+      width: 30px;
+      margin-right: 2em;
+    }
+    li a,
+    li a i.material-icons,
+    .collection li a,
+    .collection li a i,
+    .collection-header{
+      color: $naranja;
+    }
+    .collection .collection li a{
+      color: $navy;
+      padding: 0;
+    }
+    #sidesocial{
+      display: flex;
+      justify-content: space-around;
+      padding: 0 1vw;
+      a{
+        height: unset;
+        padding: 1em;
+        text-align: center;
+        &:hover{
+          background-color: #fdf5e6;
+        }
+        i{
+          font-size: 1.5em;
+          margin: 0;
+          color: $naranja;
+        }
+      }
+    }
+    #sidelegal{
+      a{
+        text-align: center;
+        opacity: 0.5;
+      }
+    }
+  }
 }
 /**max-width 576px */
 @media (max-width: 576px){
