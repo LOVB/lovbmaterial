@@ -49,6 +49,9 @@ blockquote{
   align-items: center;
   justify-content: center;
 }
+body header nav a i.menu{
+  font-size: 40px;
+}
 footer.page-footer{
   background-color: $navy;
   width: 100%;
@@ -58,7 +61,36 @@ footer.page-footer{
 * Estilos particulares 
 */
 
+
 body#home{
+  /**Barra lateral de index */
+  #barraLateral{
+    left: 140px;
+    background-image: url(../img/barraLateralV.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    #iconosocial{
+      display: flex;
+      justify-content: space-around;
+      min-width: 15vh;
+      margin-bottom: 1em;
+      a i{
+        color: rgba($color: $blanco, $alpha: 0.6);
+        font-size: 1.5vw;
+      }
+    }
+    #avisolegal a{
+      color: rgba($color: $blanco, $alpha: 0.3);
+      display: block;
+      text-align: center;
+    }
+  }
+/**final barra lateral index */
   background-color: $blanco;
 	background-image: url(../img/bgimage.jpg);
 	background-size: cover;
@@ -77,8 +109,17 @@ body#home{
       #nav-vertical{
         display: block;
       }
-      nav li{
+      nav{
+        background-color: transparent;
+        box-shadow: none;
+        ul li{
         padding-right: 5vw;
+        a{
+          font-family: $ff-menu;
+          font-size: 1.2vmax;
+          color: $naranja;
+          }
+        }
       }
       .sidenav{
         transform: translateX(-105%);
@@ -122,49 +163,13 @@ body#home{
 /*
 >>>>>>>>>> MEDIA QUERIES <<<<<<<<<< 
 */
-@media (min-width: 992px){
-  #barraLateral{
-    left: 140px;
-    background-image: url(../img/barraLateralV.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    #iconosocial{
-      display: flex;
-      justify-content: space-around;
-      min-width: 15vh;
-      margin-bottom: 1em;
-      a i{
-        color: rgba($color: $blanco, $alpha: 0.6);
-        font-size: 1.5vw;
-      }
-    }
-    #avisolegal a{
-      color: rgba($color: $blanco, $alpha: 0.3);
-      display: block;
-      text-align: center;
-    }
-  }
-  body#home nav{
-    background-color: transparent;
-    box-shadow: none;
-    ul li a{
-      font-family: $ff-menu;
-      font-size: 1.2vmax;
-      color: $naranja;
-    }
-  }
-}
+
 /** max-width 992 */
 @media (max-width: 992px){
-  #barraLateral{
+  body#home #barraLateral{
     display: none;
   }
-  nav{
+  body#home header nav{
     background-color: rgba($color: $naranja, $alpha: 1);
   }
 }
