@@ -10,19 +10,4 @@ body#blog{
       background-color: #fdf5e6;
     }
   }
-  main{
-    section{
-      .card{
-        width: 300px;
-      }
-      h2{
-        margin-bottom: 0;
-      }
-      p{
-        margin: 0;
-        font-size: 1.5rem;
-        color: $naranja;
-      }
-    }
-  }
 }
