@@ -133,9 +133,12 @@ body#marketing {
     }
   }
 }
-@media (max-width: 720){
+@media (max-width: 720px){
 
 }
-@media (max-width: 540){
+@media (max-width: 540px){
+  body#marketing main h2#bienvenido {
+    font-size: 35px !important;
+  }
 
 }
