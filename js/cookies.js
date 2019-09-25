@@ -20,7 +20,7 @@ function aceptar_cookies(){
   var expire=new Date();
   expire=new Date(expire.getTime()+7776000000);
   document.cookie="cookies_surestao=aceptada; expires="+expire;
-  document.getElementById("barraaceptacion").style.display="none";
+  
 
   var visit=GetCookie("cookies_surestao");
   if (visit==1){
@@ -32,6 +32,7 @@ jQuery(function() {
   var visit=GetCookie("cookies_surestao");
   if (visit==1){
     $('#barraaceptacion').toggle();
+    //document.getElementById("barraaceptacion").style.display="none";
   } else {
     var expire=new Date();
     expire=new Date(expire.getTime()+7776000000);

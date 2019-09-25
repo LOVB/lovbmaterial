@@ -1,5 +1,5 @@
 /**Importaciones de colores y fuentes */
-@import 'colors';
+//@import 'colors';
 
 /**Estilos generales de marketing */
 /**Nuevos estilos genericos */
@@ -84,13 +84,13 @@ body#marketing {
     * Imagenes de background del carousel 
     */
     #analitico .carousel .carousel-item {
-      background-image: url(../img/finalcial.jpg);
+      background-image: url(../img/fondo/finalcial.jpg);
     }
     #grafico .carousel .carousel-item {
-      background-image: url(../img/design.jpg);
+      background-image: url(../img/fondo/design.jpg);
     }
     #digital .carousel .carousel-item {
-      background-image: url(../img/social.jpg);
+      background-image: url(../img/fondo/social.jpg);
     }
     .section {
       .header {
