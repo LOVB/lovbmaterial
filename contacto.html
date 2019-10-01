@@ -7,23 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="icon.ico" />
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
 
-    <!-- Librería de iconos de Materialize -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
-      <!-- Importación de iconos de Font Awesome -->
+      <!--Import Google Icon Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Importación de iconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-    <link rel="stylesheet" href="css/materialize.min.css" />
-    <link rel="stylesheet" href="css/sidenav.min.css" />
-    <link rel="stylesheet" href="css/cookies.min.css">
-    <link rel="stylesheet" href="css/main.min.css" />
+    <!-- materialize -->
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <!-- cookies -->
+    <link rel="stylesheet" href="css/cookiesconsent.min.css">
+    <!-- sidenav -->
+    <link rel="stylesheet" href="css/sidenav.min.css">
+    <!-- Estilos del tema -->
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
-
-  <body id="contacto">
-
 <!-- 
->>>>>>>>>>>>> HEADER <<<<<<<<<<
+>>>>>>>>>> BODY <<<<<<<<<<
+-->
+  <body id="contacto">
+<!-- 
+>>>>>>>>>> HEADER <<<<<<<<<<
 -->
     <header>
       <!-- Menú vertical para la version large -->
@@ -93,18 +98,22 @@
         <!-- Seccion de contacto -->
         <section class="row">
           <h5>De forma directa</h5>
-          <ul class="collapsible">
+          <ul class="collapsible popout">
             <!-- Telefono -->
             <li>
               <div class="collapsible-header valign-wrapper">
                 <img src="img/icons/telefono.svg" alt="telefono" />Teléfono
               </div>
               <div class="collapsible-body valign-wrapper">
-                <q>Si puedes soñarlo puedes hacerlo, recuerda que todo esto
-                  comenzó con un ratón.</q>
-                <cite>Walt Disney</cite>
-                <a href="tel:+34603631149" class="waves-effect waves-light btn lovb"
-                  ><i class="material-icons left">local_phone</i>Llamar</a>
+                <article>
+                  <q>Si puedes soñarlo puedes hacerlo, recuerda que todo esto
+                    comenzó con un ratón.</q>
+                  <cite>Walt Disney</cite>
+                </article>
+                <article>
+                  <a href="tel:+34603631149" class="waves-effect waves-light btn-large lovb"
+                    ><i class="material-icons left">local_phone</i>Llamar</a>
+                </article>
               </div>
             </li>
             <!-- Email -->
@@ -113,11 +122,14 @@
                 <img src="img/icons/email.svg" alt="email" />Email
               </div>
               <div class="collapsible-body valign-wrapper">
-                <q>Cáete siete veces y levántate ocho.</q>
-                <cite>Proverbio japonés.</cite>
-                <a href="mailto:info@lovbstudio.com" class="waves-effect waves-light btn lovb"
-                  ><i class="material-icons left">email</i>Mandar</a
-                >
+                <article>
+                  <q>Cáete siete veces y levántate ocho.</q>
+                  <cite>Proverbio japonés.</cite>
+                </article>
+                <article>
+                  <a href="mailto:info@lovbstudio.com" class="waves-effect waves-light btn-large lovb"
+                    ><i class="material-icons left">email</i>Mandar</a>
+                </article>
               </div>
             </li>
             <!-- Whatsapp -->
@@ -126,12 +138,16 @@
                 <img src="img/icons/whatsapp.svg" alt="whatsapp" />Whatsapp
               </div>
               <div class="collapsible-body valign-wrapper">
-                <q>El triunfo del verdadero hombre surge de las cenizas del error.</q>
-                <cite>Pablo Neruda</cite> 
-                <a
-                  href="https://wa.me/0034603631149"
-                  class="waves-effect waves-light btn lovb"
-                  ><i class="material-icons left">send</i>Mandar</a>
+                <article>
+                  <q>El triunfo del verdadero hombre surge de las cenizas del error.</q>
+                  <cite>Pablo Neruda</cite> 
+                </article>
+                <article>
+                  <a
+                    href="https://wa.me/+34603631149"
+                    class="waves-effect waves-light btn-large lovb"
+                    ><i class="material-icons left">send</i>Mandar</a>
+                </article>
               </div>
             </li>
           </ul>
@@ -139,19 +155,24 @@
         <!-- Seccion de redes sociales -->
         <section class="row">
           <h5>Por redes sociales</h5>
-          <ul class="collapsible">
+          <ul class="collapsible popout">
             <!-- Twitter -->
             <li>
               <div class="collapsible-header valign-wrapper">
                 <img src="img/icons/twitter.svg" alt="whatsapp" />Twitter
               </div>
               <div class="collapsible-body valign-wrapper">
-                <q>Cuanto más hacemos, más podemos hacer.</q>
-                <cite>William Hazlitt</cite>
-                <a
-                  href="https://twitter.com/LovbStudio"
-                  class="waves-effect waves-light btn lovb"
-                  ><i class="material-icons left">device_hub</i>Conectar</a>
+                <article>
+                  <q>Cuanto más hacemos, más podemos hacer.</q>
+                  <cite>William Hazlitt</cite>
+                </article>
+                <article>
+                  <a
+                    href="https://twitter.com/LovbStudio"
+                    class="waves-effect waves-light btn-large lovb"
+                    ><i class="material-icons fab fa-twitter"></i>Conectar</a>
+                    
+                </article>
               </div>
             </li>
             <!-- Instagram -->
@@ -160,12 +181,16 @@
                 <img src="img/icons/instagram.svg" alt="instagram" />instagram
               </div>
               <div class="collapsible-body valign-wrapper">
-                <q>Un objetivo sin un plan es solo un deseo.</q>
+                <article>
+                  <q>Un objetivo sin un plan es solo un deseo.</q>
                   <cite>Antoine de Saint-Exupéry</cite>
-                <a
-                  href="https://www.instagram.com/luisvballesteros/"
-                  class="waves-effect waves-light btn lovb"
-                  ><i class="material-icons left">device_hub</i>Conectar</a>
+                </article>
+                <article>
+                  <a
+                    href="https://www.instagram.com/luisvballesteros/"
+                    class="waves-effect waves-light btn-large lovb"
+                    ><i class="fab fa-instagram"></i>Conectar</a>
+                </article>
               </div>
             </li>
             <!-- LinkedIn -->
@@ -174,12 +199,16 @@
                 <img src="img/icons/Recurso 5.svg" alt="linkedin" />LinkedIn
               </div>
               <div class="collapsible-body valign-wrapper">
-                <q>Una meta es un sueño con una fecha límite.</q>
-                <cite>Napoleon Hill</cite>
-                <a
-                  href="https://www.linkedin.com/in/luis-vicente-ballesteros-suárez-4b7653155/"
-                  class="waves-effect waves-light btn lovb"
-                  ><i class="material-icons left">device_hub</i>Conectar</a>
+                <article>
+                  <q>Una meta es un sueño con una fecha límite.</q>
+                  <cite>Napoleon Hill</cite>
+                </article>
+                <article>
+                  <a
+                    href="https://www.linkedin.com/in/luis-vicente-ballesteros-suárez-4b7653155/"
+                    class="waves-effect waves-light btn-large lovb"
+                  ><i class="fab fa-linkedin"></i>Conectar</a>
+                </article>
               </div>
             </li>
           </ul>
@@ -197,25 +226,6 @@
       </div>
     </footer>
 <!--
->>>>>>>>>> BLOQUE COOKIES <<<<<<<<<<
--->
-  <div id="barraaceptacion" class="row">
-    <div class="col s12">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title cyan-text lighten-5">Politica de cookies</span>
-          <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real 
-              Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.</p>
-        </div>
-        <div class="card-action center-align">
-          <a class="orange-text lighten-5" onclick="aceptar_cookies();">Acepto</a>
-          <a href="legal.html#cookies" target="_blank" class="orange-text lighten-5">Más información</a>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--//FIN BLOQUE COOKIES-->
-<!--
 >>>>>>>>> SCRIPTS <<<<<<<<<<
 -->
     <script
@@ -231,6 +241,7 @@
     </script>
     <script src="js/materialize.min.js"></script>
     <script src="js/plugins.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script src="js/cookies.js"></script>
     <script src="js/main.js"></script>
 

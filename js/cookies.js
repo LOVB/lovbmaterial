@@ -1,46 +1,19 @@
-function GetCookie(name) {
-  var arg=name+"=";
-  var alen=arg.length;
-  var clen=document.cookie.length;
-  var i=0;
-  while (i<clen) {
-      var j=i+alen;
-
-      if (document.cookie.substring(i,j)==arg)
-          return "1";
-      i=document.cookie.indexOf(" ",i)+1;
-      if (i==0)
-          break;
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#e0dada",
+      "text": "#a8a8a8"
+    },
+    "button": {
+      "background": "#e66f2d",
+      "text": "#ffffff"
+    }
+  },
+  "theme": "classic",
+  "position": "bottom-right",
+  "content": {
+    "message": "Solicito tu permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real Decreto-ley 13/2012. Si continúas navegando consideramos que acepta el uso de cookies.",
+    "dismiss": "Acepto",
+    "link": "Política de cookies"
   }
-
-  return null;
-}
-
-function aceptar_cookies(){
-  var expire=new Date();
-  expire=new Date(expire.getTime()+7776000000);
-  document.cookie="cookies_surestao=aceptada; expires="+expire;
-  
-
-  var visit=GetCookie("cookies_surestao");
-  if (visit==1){
-      popbox3();
-  }
-}
-
-jQuery(function() {
-  var visit=GetCookie("cookies_surestao");
-  if (visit==1){
-    $('#barraaceptacion').toggle();
-    //document.getElementById("barraaceptacion").style.display="none";
-  } else {
-    var expire=new Date();
-    expire=new Date(expire.getTime()+7776000000);
-    document.cookie="cookies_surestao=aceptada; expires="+expire;
-}
-
 });
-
-function popbox3() {
-  $('#barraaceptacion').toggle();
-}

@@ -56,6 +56,11 @@ footer.page-footer{
   align-items: center;
   justify-content: center;
 }
+.btn-large{
+  text-transform: none;
+  background-color: $naranja;
+  color: $blanco;
+}
 main .container .page-title{
   h2{
     margin-bottom: 0;

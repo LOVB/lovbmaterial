@@ -9,6 +9,7 @@
 
  body#contacto{
   background-color: $blanco;
+  height: 101vh;
   header{
     .sidenav li:nth-child(5){
       background-color: #fdf5e6;
@@ -23,8 +24,17 @@
     img{
       width: 100%;
     }
-    .collapsible-body .btn{
-      margin: 0 2em;
+    .collapsible-body article{
+      text-align: center;
+      cite{
+        font-weight: bold;
+      }
+      .btn-large{
+      margin: 2em;
+      }
+      i {
+        padding-right: 1em;
+      }
     }
     .collapsible-header{
       text-transform: uppercase;
@@ -34,6 +44,22 @@
        width: 35px;
        margin-right: 3em;
      }
+    }
+  }
+}
+
+@media (max-width: 576px){
+  body#contacto main .collapsible .collapsible-body article{
+  	display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+    q{
+      text-align: center;
+    }
+    cite{
+      font-weight: bold;
+      padding: 1em 0;
     }
   }
 }

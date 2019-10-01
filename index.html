@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="icon.ico">
+  <link rel="shortcut icon" href="icon.ico">
 
   <!--Import Google Icon Font-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,9 +18,11 @@
   <!-- materialize -->
   <link rel="stylesheet" href="css/materialize.min.css">
   <!-- cookies -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
   <link rel="stylesheet" href="css/cookies.min.css">
   <!-- sidenav -->
   <link rel="stylesheet" href="css/sidenav.min.css">
+  <!-- Estilos del tema -->
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -30,9 +32,9 @@
   <![endif]-->
   <div id="barraLateral">
     <div id="iconosocial">
-        <a href="https://twitter.com/LovbStudio"><i class="fab fa-twitter"></i></a>
-        <a href="https://www.instagram.com/luisvballesteros/?hl=es"><i class="fab fa-instagram"></i></a> 
-        <a href="https://www.linkedin.com/in/luis-vicente-ballesteros-suárez-4b7653155/"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://twitter.com/LovbStudio"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/luisvballesteros/?hl=es"><i class="fab fa-instagram"></i></a> 
+      <a href="https://www.linkedin.com/in/luis-vicente-ballesteros-suárez-4b7653155/"><i class="fab fa-linkedin-in"></i></a>
     </div>
     <div id="avisolegal">
       <a href="https://www.lovbstudio.com/beta/legal.html">Aviso legal</a>
@@ -115,29 +117,12 @@
     </div>
   </footer>
 <!--
-  >>>>>>>>>> BLOQUE COOKIES <<<<<<<<<<
--->
-  <div id="barraaceptacion" class="row">
-    <div class="col s12">
-      <div class="card blue-grey darken-1">
-        <div class="card-content">
-          <span class="card-title cyan-text lighten-5">Politica de cookies</span>
-          <p>Solicitamos su permiso para obtener datos estadísticos de su navegación en esta web, en cumplimiento del Real Decreto-ley 13/2012. Si continúa navegando consideramos que acepta el uso de cookies.</p>
-        </div>
-        <div class="card-action center-align">
-          <a class="orange-text lighten-5" onclick="aceptar_cookies();">Acepto</a>
-          <a href="legal.html#cookies" target="_blank" class="orange-text lighten-5">Más información</a>
-        </div>
-      </div>
-    </div>
-  </div>
-<!--
   >>>>>>>>> SCRIPTS <<<<<<<<<<
 -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/materialize.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
   <script src="js/cookies.js"></script>
   <script src="js/main.js"></script>
 
