@@ -1,15 +1,36 @@
-# humanstxt.org/
-# The humans responsible & technology colophon
+/* humanstxt.org/ */
+/* The humans responsible & technology colophon */
+                            
+/* TEAM */
 
-# TEAM
+Creado por: Luis Vicente Ballesteros, diseñador y desarrollador del proyecto.
 
-    <name> -- <role> -- <twitter>
+Site: https://www.lovbstudio.com/contacto.html
 
-# THANKS
+Twitter: @LovbStudio
 
-    <name>
+Location: España
 
-# TECHNOLOGY COLOPHON
+/* THANKS */
 
-    CSS3, HTML5
-    Apache Server Configs, jQuery, Modernizr, Normalize.css
+Name: https://www.lovbstudio.com
+
+/* SITE */
+
+Last update: YYYY/MM/DD 
+
+Standards: HTML5, CSS3, JavaScript, 
+Components: Modernizr, jQuery, Materailize, Font Awesome
+
+Dear humans,
+
+Just so you guys know, we are going to close the submitting area of the web. We recieve an insane amount of spam and because we review every humans.txt submission it is a crazy job!
+
+Perhaps in the future we will find a better way to bring back to life a better submit form, who knows ;)
+
+Thank you so much for the support and remember:
+we are humans.
+
+--
+
+The humansTxT team
