@@ -24,6 +24,9 @@
     img{
       width: 100%;
     }
+    #descarga p{
+      font-size: 1.2em;
+    }
     .collapsible li#descarga{
       width: 33%;
       a{
@@ -52,20 +55,20 @@
      }
     }
   }
-}
-
-@media (max-width: 576px){
-  body#contacto main .collapsible .collapsible-body article{
-  	display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1em 0;
-    q{
-      text-align: center;
-    }
-    cite{
-      font-weight: bold;
-      padding: 1em 0;
+  
+  @media (max-width: 576px){
+    body#contacto main .collapsible .collapsible-body article{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 1em 0;
+      q{
+        text-align: center;
+      }
+      cite{
+        font-weight: bold;
+        padding: 1em 0;
+      }
     }
   }
 }

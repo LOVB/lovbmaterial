@@ -9,6 +9,8 @@
  /*
  * 1. Importaciones de estilos 
  */
+/**Estilos de sobremi.html */
+@import 'sobremi';
 /**Estilos de blog.html */
 @import 'blog';
  /**Estilos de contacto.html */
@@ -60,6 +62,10 @@ footer.page-footer{
   text-transform: none;
   background-color: $naranja;
   color: $blanco;
+}
+.align-left{
+  max-width: 300px;
+  float: left;
 }
 main .container .page-title{
   h2{
