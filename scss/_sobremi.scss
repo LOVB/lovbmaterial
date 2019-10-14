@@ -67,103 +67,84 @@ body#sobremi{
     /** Artículo técnico */
 
     li#tecnico .collapsible-body{
+      background-color: #ededeb;
       article{
         margin: 5em 0;
+        h5{
+          letter-spacing: .5vw;
+        }
       }
       article:nth-child(1){
         margin: 2em 0;
       }
       /** Guia de niveles */
-      ul.swatch {
-        margin: 0; padding:0;
-        margin: 1em auto;
-        list-style-type: none;
-        width: 50%;
-        display: flex;
-        position: relative;
-        justify-content: space-around;
-        &::before {
-          content: '';
-          width: 100%;
-          height: 10px;
-          outline: 0px solid #000;
-          position: absolute;
-          top: 20px;
-          left: 0;
-          border-radius: 2px;
-          background-image: linear-gradient( 90deg, 
-                                      #8bcf69 33.3%, 
-                                      #e6d450 33.3%,
-                                      #e6d450 66.3%,
-                                      #f28f68 66.3%,
-                                      #f28f68 99.3%,
-                                                );}
+      .ui {
+        margin-top: 50px;
+        font-family: 'Source Sans Pro', sans-serif;
+        color: white;
+        .ui_box {
+          height: auto;
+          background: #3d3d3d;
+          box-shadow: -1px -1px rgba(255, 255, 255, 0.07);
+          h2 {
+            font-family: $ff-sans;
+            color: $blanco;
+            font-weight: normal;
+            font-size: 1.3em;
+            margin: -4px 0px 3px 0px;
+          }
+          p {
+            font-size: 12px;
+            color: $texto;
+            font-weight: 300;
+            margin: 2px 0px 15px 0px;
+          }
+          .ui_box__inner {
+            padding: 1em;
+            span {
+              color: $texto;
+              font-size: 1.1em;
+              font-weight: 700;
+            }
+            .progress {
+              width: 100%;
+              margin-top: 10px;
+              height: 6px;
+              background: rgba(0, 0, 0, 0.3);
+              margin-bottom: 15px;
+              .progress_bar {
+                height: 6px;
+                float: left;
+                animation: bar 2s;
+                &.basico{
+                  background: #f1bc31;
+                  width: 33.3%;
+                }
+                &.medio{
+                  background: #e25822;
+                  width: 66.6%;
+                }
+                &.avanzado{
+                  background: #b22222;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
       }
 
       /** Niveles de capacidades técnicas */
 
-      .rango{
-        display: flex;
-        flex-direction: column;
-        .box{
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          width: 100%;
-          padding: 0;
-
-          /**Nivel de progreso */
-
-          progress{
-            margin-left: 1em;
-            width: 20vw;
-            -webkit-appearance: none;
-            &::-webkit-progress-value{
-              background-image: linear-gradient( 90deg, 
-                                            #8bcf69 33.3%, 
-                                            #e6d450 33.3%,
-                                            #e6d450 66.3%,
-                                            #f28f68 66.3%,
-                                            #f28f68 99.3%,
-                                            );}
-            }
-          progress.medio::-webkit-progress-value{
-            background-image: linear-gradient( 90deg, 
-                                            #8bcf69 33.3%, 
-                                            #e6d450 33.3%,
-                                            #e6d450 66.3%,
-                                            #ffffff 66.3%,
-                                            #ffffff 99.3%,
-                                            );}
-          progress.basico::-webkit-progress-value{
-            background-image: linear-gradient( 90deg, 
-                                            #8bcf69 33.3%, 
-                                            #ffffff 33.3%,
-                                            #ffffff 66.3%,
-                                            #ffffff 66.3%,
-                                            #ffffff 99.3%,
-                                            );}
-          
-          }
-        }
+      
       }
     }
     
     /** Para que se adapte las barras a partir de la versión de tableta */
     @media (max-width: 992px){
-      progress{
-        width: 50% !important;
-      }
+     
     }
     @media (max-width: 600px){
-      .rango .box{
-        justify-content: space-between !important;
-      }
-      .swatch{
-        width: 100% !important;
-      }
-      progress{
-        width: 40vw;
-      }
+     
     }
   }
