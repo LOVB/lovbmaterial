@@ -9,13 +9,15 @@ html{
 /**Cambios de estilos base */
 body#marketing {
   background-color: $naranja;
-
   header{
    .sidenav .collection .collection-header{
       background-color: $hover-sidenav;
     }
   } 
   main{
+    #bienvenido{
+      margin-top: 5vw;
+    }
     h2{
       font-family: $ff-serif;
       color: $blanco;
