@@ -133,18 +133,16 @@ body#sobremi{
           }
         }
       }
-
-      /** Niveles de capacidades técnicas */
-
-      
-      }
-    }
-    
-    /** Para que se adapte las barras a partir de la versión de tableta */
-    @media (max-width: 992px){
-     
-    }
-    @media (max-width: 600px){
-     
     }
   }
+  section.personal{
+    margin-bottom: 10vh;
+  }
+  /** Para que se adapte las barras a partir de la versión de tableta */
+  @media (max-width: 992px){
+    
+  }
+  @media (max-width: 600px){
+    
+  }
+}
