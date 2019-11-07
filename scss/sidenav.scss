@@ -25,6 +25,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    #logoprincipal img{
+      width: 100%;
+    }
     li a img{
       width: 30px;
       margin-right: 2em;
