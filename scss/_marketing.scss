@@ -17,6 +17,10 @@ body#marketing {
   main{
     #bienvenido{
       margin-top: 5vw;
+      p{
+        margin-top: 0;
+        font-size: calc(.5em + 1vw);
+      }
     }
     h2{
       font-family: $ff-serif;
@@ -28,6 +32,7 @@ body#marketing {
     .exp{
       color: $blanco;
       margin: 4vw 0;
+      font-size: calc(0.8em + 1vw);
     }
     .card i.material-icons{
       background-color: $secundario;
@@ -94,6 +99,7 @@ body#marketing {
       }
       p{
         margin: 5vw 2em;
+        font-size: calc(.6em + 1vw);
       }
     } 
     .box2{
@@ -132,9 +138,16 @@ body#marketing {
 @media (max-width: 720px){
 
 }
-@media (max-width: 540px){
-  body#marketing main h2#bienvenido {
-    font-size: 35px !important;
+@media (max-width: 600px){
+  body#marketing main #bienvenido p{
+    font-size: 20px !important;
+    margin-top: 1em !important;
+    width: 100%;
   }
-
+  body#marketing main #bienvenido p:nth-child(2){
+    text-align: center;
+  }
+  body#marketing main .section p{
+    font-size: 20px;
+  }
 }
