@@ -59,7 +59,7 @@ body#marketing {
         }
         p{
           margin: 20px;
-          //font-size: calc(.3em + 1vw);
+          font-size: calc(.3em + 1vw);
         }
         ul{
           text-align: left;
@@ -124,15 +124,7 @@ body#marketing {
         width: 100vw;
       }
     }
-    main .carousel .carousel-item p{
-      font-size: calc(7px + 1vw);
-    }
-    main .carousel .carousel-item ul li{
-      font-size: calc(.5em + 1vw);
-    }
-    main .carousel .carousel-item ul li.collection-item{
-      font-size: calc(.4em + 1vw);
-    }
+    
   }
 }
 @media (max-width: 720px){
@@ -149,5 +141,16 @@ body#marketing {
   }
   body#marketing main .section p{
     font-size: 20px;
+  }
+  body#marketing main .carousel .carousel-item {
+     p{
+      font-size: calc(.8em + 1vw);
+    }
+    ul li{
+      font-size: calc(.5em + 1vw);
+    }
+    ul li.collection-item{
+      font-size: calc(.5em + 1vw);
+    }
   }
 }
